@@ -30,6 +30,9 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <div class="modal-body">
+                    <img src="cryingbear.gif" alt="Crying Bear" style="max-width: 100%; height: auto;">
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" onclick="showHappyFace()">No</button>
                     <button type="button" class="btn btn-danger" onclick="showSadFace()">Yes</button>
@@ -45,11 +48,12 @@
 
         function showSadFace() {
             $('#confirmModal').modal('show');
-            alert(":(, i think you should reconsider");
+            alert(":(, I think you should reconsider");
         }
+
         function showHappyFace() {
             $('#confirmModal').modal('hide');
-            alert("Yay, you wont regret :)");
+            alert("Yay, you won't regret :)");
         }
     </script>
 
