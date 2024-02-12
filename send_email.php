@@ -7,10 +7,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "thezinctz@gmail.com";
     $subject = "Valentine's Date Preferences";
     $message = "Food: " . $food . "\nClothes: " . $clothes . "\nActivity: " . $activity;
+    
 
-    mail($to, $subject, $message);
 
-    header("Location: confirmation.html");
-    exit;
+    // Send email
+    if (mail($to, $subject, $message)) {
+        header("Location: confirmation.html");
+        exit;
+    } else {
+        echo "Failed to send email. Please try again.";
+    }
 }
 ?>
