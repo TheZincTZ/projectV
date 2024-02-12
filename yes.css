@@ -15,24 +15,23 @@ body {
 
 h1 {
     color: #e74c3c;
-    margin-bottom: 20px; /* Add margin at the bottom of h1 */
 }
 
 form {
-    margin-top: 20px; /* Add margin at the top of the form */
+    margin-top: 20px;
 }
 
 form label {
-    display: block; /* Make labels block-level for better spacing */
-    margin-bottom: 5px; /* Add some space below each label */
+    display: block;
+    margin-bottom: 10px;
 }
 
 form select {
-    width: 100%; /* Make the select element full width */
+    width: 100%;
     padding: 8px;
-    margin-bottom: 15px; /* Add margin below each select element */
+    margin-bottom: 15px;
 }
 
-form button {
-    padding: 10px 20px; /* Add padding to the button */
+button {
+    padding: 10px 20px;
 }
