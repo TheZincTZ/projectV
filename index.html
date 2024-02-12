@@ -31,8 +31,8 @@
                     </button>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-primary" onclick="showSadFace()">Yes</button>
+                    <button type="button" class="btn btn-success" onclick="showHappyFace()">No</button>
+                    <button type="button" class="btn btn-danger" onclick="showSadFace()">Yes</button>
                 </div>
             </div>
         </div>
@@ -45,7 +45,11 @@
 
         function showSadFace() {
             $('#confirmModal').modal('show');
-            alert(":(");
+            alert(":(, i think you should reconsider");
+        }
+        function showHappyFace() {
+            $('#confirmModal').modal('hide');
+            alert("Yay, you wont regret :)");
         }
     </script>
 
