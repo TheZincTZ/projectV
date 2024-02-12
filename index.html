@@ -17,12 +17,20 @@
         <p>Time: 7:00 PM</p>
         <p>Location: Romantic Restaurant</p>
         <button class="btn btn-success" onclick="redirectToYes()">Yes</button>
-        <button class="btn btn-danger">No</button>
+        <button class="btn btn-danger" onclick="confirmNo()">No</button>
     </div>
 
     <script>
         function redirectToYes() {
             window.location.href = 'yes.html';
+        }
+
+        function confirmNo() {
+            if (confirm("Are you sure?")) {
+                alert(":(");
+            } else {
+                window.location.href = 'index.html';
+            }
         }
     </script>
 </body>
