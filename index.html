@@ -16,9 +16,15 @@
         <p>Date: February 14th, 2024</p>
         <p>Time: 7:00 PM</p>
         <p>Location: Romantic Restaurant</p>
-        <button class="btn btn-success">Yes</button>
+        <button class="btn btn-success" onclick="redirectToYes()">Yes</button>
         <button class="btn btn-danger">No</button>
     </div>
+
+    <script>
+        function redirectToYes() {
+            window.location.href = 'yes.html';
+        }
+    </script>
 </body>
 
 </html>
